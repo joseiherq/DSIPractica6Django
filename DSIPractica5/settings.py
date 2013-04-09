@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/home/jose/DSI/DSIPractica5/sqlite3.db',                      # Or path to database file if using sqlite3.
+        'NAME': '/home/jose/DSI/DSIPractica6Django/sqlite3.db',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -60,10 +60,11 @@ STATIC_ROOT = ''
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '/static/'
+STATIC_URL = '/home/jose/DSI/DSIPractica6Django/css/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
+    ('/home/jose/DSI/DSIPractica6Django/css'),
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -104,7 +105,7 @@ ROOT_URLCONF = 'DSIPractica5.urls'
 WSGI_APPLICATION = 'DSIPractica5.wsgi.application'
 
 TEMPLATE_DIRS = (
-    '/home/jose/DSI/DSIPractica5/templates/'
+    '/home/jose/DSI/DSIPractica6Django/templates/'
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
